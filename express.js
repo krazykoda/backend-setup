@@ -10,7 +10,12 @@ const handler = (data) => {
 
 //create routes 
 app.get("/", handler("<h1>Welcome to my first Backend Server</h1>"))
+
 app.get("/login", handler("<h1>Login Page</h1>"))
+app.post("/login", handler("<h1>This is Login Post</h1>"))
+app.put("/login", handler("<h1>This is Login Put</h1>"))
+app.delete("/login", handler("<h1>This is Login Delete</h1>"))
+
 app.get("/register", handler("<h1>Register Page</h1>"))
 app.get("/contact", handler("<h1>No Contact List</h1>"))
 
